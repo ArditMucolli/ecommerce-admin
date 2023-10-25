@@ -1,10 +1,11 @@
-import { Button } from "@/components/ui/button";
+import { UserButton } from "@clerk/nextjs";
 
-export default function Home() {
+const SetupPage = () => {
   return (
-    <div>
-      <p>Hello Admin Dashboard</p>
-      <Button>Hello</Button>
+    <div className="p-4">
+      <UserButton afterSignOutUrl="/" />
     </div>
   );
-}
+};
+
+export default SetupPage;
