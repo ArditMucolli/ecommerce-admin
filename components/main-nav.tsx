@@ -14,7 +14,7 @@ export function MainNav({
   const routes = [
     {
       href: `/${params.storeId}`,
-      label: "Home",
+      label: "Overview",
       active: pathname === `/${params.storeId}`,
     },
     {
